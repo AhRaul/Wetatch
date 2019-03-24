@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/cardView"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:elevation="1dp"
+card_view:cardCornerRadius="20dp"
+card_view:cardElevation="25dp"
+card_view:contentPaddingBottom="20dp"
+card_view:cardBackgroundColor="@color/cardview_light_background"
+tools:context=".CityCardFragment"
+    android:clickable="true"
+    android:focusable="true">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/cityCardImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".40"
+        android:contentDescription="TODO"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/matdes"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="CityName"
+        android:textSize="42dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.112"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Temperature"
+        android:textSize="24dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.181"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/cityName" />
+
+    <ImageView
+        android:id="@+id/cityEmblemImage"
+        android:layout_width="130dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/matdes"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.867"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="@+id/cityName" />
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

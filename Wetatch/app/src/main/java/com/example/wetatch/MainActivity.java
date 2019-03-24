@@ -16,12 +16,28 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private CityCardFragment frag1;
+    private CityCardFragment frag2;
+    private CityCardFragment frag3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        frag1 = new CityCardFragment();
+        frag2 = new CityCardFragment();
+        frag3 = new CityCardFragment();
+
+        frag1.setCityName("Kazan");
+        frag2.setCityName("Moscow");
+        frag3.setCityName("Peter");
+
+        frag1.setTemperature("+5");
+        frag1.setTemperature("+7");
+        frag1.setTemperature("+3");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
