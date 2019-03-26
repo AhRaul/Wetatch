@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_g1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_show_the_weather"
+            android:icon="@drawable/ic_menu_place"
+            android:title="@string/weather" />
+    </group>
+
+    <group
+        android:id="@+id/nav_g2"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_dev_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="@string/about_the_developer" />
+        <item
+            android:id="@+id/nav_write_to_dev"
+            android:icon="@drawable/ic_menu_write"
+            android:title="@string/write_to_developer" />
+        <item
+            android:id="@+id/nav_user_exit"
+            android:icon="@drawable/ic_menu_input"
+            android:title="@string/user_exit" />
+    </group>
+
+</menu>
